@@ -1,0 +1,320 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Opendoor Wholesaling Co. — Your Key to Instant Cash Offers</title>
+  <meta name="description" content="Nationwide cash offers for homes. Fast, fair, and hassle-free. Contact opendoorwholesaling@gmail.com" />
+  <style>
+    /* --- Bold & Modern dark theme (gold accents) --- */
+    :root{
+      --bg:#0b0b0d;
+      --card:#0f0f12;
+      --muted:#9aa0a6;
+      --gold:#d4a44a;
+      --white:#ffffff;
+      --accent:linear-gradient(90deg,#d4a44a,#ffd88d);
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+    }
+    *{box-sizing:border-box}
+    html,body{height:100%}
+    body{margin:0;background:var(--bg);color:var(--white);-webkit-font-smoothing:antialiased}
+    a{color:inherit;text-decoration:none}
+    .container{max-width:1100px;margin:0 auto;padding:28px}
+
+    /* Header */
+    header{display:flex;justify-content:space-between;align-items:center;padding:18px 0}
+    .brand{display:flex;align-items:center;gap:14px}
+    .logo{width:56px;height:56px;border-radius:12px;background:var(--card);display:flex;align-items:center;justify-content:center;box-shadow:0 6px 18px rgba(0,0,0,.6)}
+    .logo svg{filter:drop-shadow(0 4px 10px rgba(0,0,0,.6))}
+    .brand h1{font-size:18px;margin:0}
+    .tag{color:var(--muted);font-size:13px}
+    nav a{margin-left:18px;padding:10px 14px;border-radius:10px;font-weight:600}
+    nav a.primary{background:linear-gradient(90deg, rgba(212,164,74,0.14), rgba(255,216,141,0.06));border:1px solid rgba(212,164,74,0.15)}
+
+    /* Hero */
+    .hero{display:grid;grid-template-columns:1fr 420px;gap:40px;align-items:center;padding:48px 0}
+    .hero-card{background:linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));padding:36px;border-radius:18px;box-shadow:0 10px 30px rgba(0,0,0,.6);border:1px solid rgba(255,255,255,0.03)}
+    .hero h2{font-size:34px;margin:0 0 14px;line-height:1.02}
+    .hero p{color:var(--muted);margin:0 0 22px}
+    .cta-row{display:flex;gap:12px}
+    .btn{display:inline-block;padding:12px 18px;border-radius:12px;font-weight:700;cursor:pointer}
+    .btn-ghost{border:1px solid rgba(255,255,255,0.06);background:transparent}
+    .btn-gold{background:var(--gold);color:var(--bg);box-shadow:0 8px 18px rgba(212,164,74,0.12)}
+
+    /* Right panel */
+    .offer-box{background:linear-gradient(90deg, rgba(212,164,74,0.06), rgba(255,216,141,0.02));padding:22px;border-radius:12px}
+    .offer-amount{font-size:22px;font-weight:800}
+    .muted{color:var(--muted)}
+
+    /* Sections */
+    section{padding:40px 0;border-top:1px solid rgba(255,255,255,0.02)}
+    .grid-3{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+    .card{background:var(--card);padding:20px;border-radius:12px;border:1px solid rgba(255,255,255,0.02)}
+
+    /* Form */
+    label{display:block;font-size:13px;color:var(--muted);margin-bottom:6px}
+    input[type=text],input[type=email],textarea,select{width:100%;padding:12px;border-radius:10px;border:1px solid rgba(255,255,255,0.04);background:transparent;color:var(--white);outline:none}
+    textarea{min-height:120px}
+    .form-row{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+
+    /* Footer */
+    footer{padding:26px 0;color:var(--muted);display:flex;justify-content:space-between;align-items:center}
+
+    /* Responsive */
+    @media (max-width:980px){
+      .hero{grid-template-columns:1fr;}
+      .grid-3{grid-template-columns:1fr}
+      .form-row{grid-template-columns:1fr}
+      nav a{margin-left:8px}
+    }
+
+    /* Small touches */
+    .sparkle{display:inline-block;background:linear-gradient(90deg,#fff7e6,#ffd88d);-webkit-background-clip:text;background-clip:text;color:transparent}
+
+    /* Simple page switcher animation */
+    .page{display:none;animation:fadeIn .28s ease both}
+    .page.active{display:block}
+    @keyframes fadeIn{from{opacity:0;transform:translateY(6px)}to{opacity:1;transform:none}}
+
+    /* Tiny nav underline */
+    nav a.active-link{box-shadow:inset 0 -3px 0 var(--gold)}
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="brand">
+        <div class="logo" aria-hidden>
+          <svg width="34" height="34" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect x="1" y="1" width="22" height="22" rx="5" fill="url(#g)" />
+            <defs>
+              <linearGradient id="g" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#d4a44a"/><stop offset="1" stop-color="#ffd88d"/></linearGradient>
+            </defs>
+            <path d="M7 12h10" stroke="#0b0b0d" stroke-width="1.6" stroke-linecap="round"/>
+          </svg>
+        </div>
+        <div>
+          <h1>Opendoor Wholesaling Co.</h1>
+          <div class="tag">Your Key to Instant Cash Offers</div>
+        </div>
+      </div>
+      <nav>
+        <a href="#home" data-link class="active-link">Home</a>
+        <a href="#about" data-link>About</a>
+        <a href="#how" data-link>How It Works</a>
+        <a href="#sell" data-link>Sell Your Home</a>
+        <a href="#contact" data-link class="primary">Contact</a>
+      </nav>
+    </header>
+
+    <!-- PAGES (single-file multi-page via hash routing) -->
+
+    <main>
+      <!-- HOME -->
+      <section id="home" class="page active">
+        <div class="hero">
+          <div class="hero-card">
+            <h2>We buy homes nationwide — fast cash, fair offers, zero headache.</h2>
+            <p class="muted">Sell as-is. No showings. Close on your timeline. Get a no-obligation offer in 48 hours.</p>
+            <div class="cta-row">
+              <button class="btn btn-gold" onclick="navigateTo('#sell')">Get Your Cash Offer</button>
+              <button class="btn btn-ghost" onclick="navigateTo('#how')">How It Works</button>
+            </div>
+            <div style="margin-top:18px;color:var(--muted);font-size:13px">Serving homeowners across the United States. Questions? <a href="mailto:opendoorwholesaling@gmail.com">opendoorwholesaling@gmail.com</a></div>
+          </div>
+
+          <aside>
+            <div class="offer-box">
+              <div class="muted">Estimated Cash Offer</div>
+              <div class="offer-amount" id="estimate">$— — —</div>
+              <div class="muted" style="margin-top:6px">Enter a few details on the Sell page for a fast estimate</div>
+            </div>
+            <div style="height:18px"></div>
+            <div class="card">
+              <div style="display:flex;justify-content:space-between;align-items:center">
+                <div>
+                  <div class="muted">Why homeowners choose us</div>
+                  <div style="font-weight:700;margin-top:6px">No repairs • Fast close • Nationwide reach</div>
+                </div>
+              </div>
+            </div>
+          </aside>
+        </div>
+      </section>
+
+      <!-- ABOUT -->
+      <section id="about" class="page">
+        <div class="hero-card">
+          <h2>About Opendoor Wholesaling Co.</h2>
+          <p class="muted">We’re a nationwide property buyer focused on giving homeowners straightforward, fair cash offers. We work with sellers of all types — inherited properties, tired rentals, or homeowners in a rush — to provide transparent, no-pressure options.</p>
+          <div style="margin-top:18px" class="grid-3">
+            <div class="card"><strong>Transparent Offers</strong><p class="muted">We explain our offer and fees up front — no surprises.</p></div>
+            <div class="card"><strong>Fast Closings</strong><p class="muted">Close in as little as 7 days or on your schedule.</p></div>
+            <div class="card"><strong>Sell As-Is</strong><p class="muted">No repairs, no staging, no showings required.</p></div>
+          </div>
+        </div>
+      </section>
+
+      <!-- HOW IT WORKS -->
+      <section id="how" class="page">
+        <div class="hero-card">
+          <h2>How It Works</h2>
+          <ol class="muted">
+            <li><strong>Tell us about your property.</strong> Use the Sell page to submit details or call/email us.</li>
+            <li><strong>Get a fair cash offer.</strong> We review comps and provide an offer, typically within 48 hours.</li>
+            <li><strong>Choose your closing date.</strong> Close fast or pick a date that works for you — we’re flexible.</li>
+            <li><strong>Get paid at close.</strong> Funds delivered at closing; we handle paperwork and title coordination.</li>
+          </ol>
+          <div style="margin-top:18px" class="card">
+            <strong>Frequently asked</strong>
+            <p class="muted"><strong>Q:</strong> Do I need to make repairs?<br><strong>A:</strong> No. We buy properties as-is.</p>
+            <p class="muted"><strong>Q:</strong> Is there a fee to get an offer?<br><strong>A:</strong> No — offers are free and come with no obligation.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- SELL YOUR HOME -->
+      <section id="sell" class="page">
+        <div class="hero-card">
+          <h2>Sell Your Home — Get an Offer</h2>
+          <p class="muted">Fill the form below and we’ll respond within 48 hours with next steps.</p>
+          <form id="sellForm" onsubmit="handleSell(event)">
+            <div class="form-row">
+              <div>
+                <label for="name">Your name</label>
+                <input id="name" name="name" required type="text" placeholder="Jane Seller" />
+              </div>
+              <div>
+                <label for="email">Email</label>
+                <input id="email" name="email" required type="email" placeholder="you@example.com" />
+              </div>
+            </div>
+
+            <div style="margin-top:12px">
+              <label for="phone">Phone (optional)</label>
+              <input id="phone" name="phone" type="text" placeholder="(555) 555-5555" />
+            </div>
+
+            <div style="margin-top:12px">
+              <label for="address">Property address</label>
+              <input id="address" name="address" required type="text" placeholder="123 Main St, City, ST" />
+            </div>
+
+            <div style="margin-top:12px" class="form-row">
+              <div>
+                <label for="beds">Bedrooms</label>
+                <input id="beds" name="beds" type="text" placeholder="3" />
+              </div>
+              <div>
+                <label for="baths">Bathrooms</label>
+                <input id="baths" name="baths" type="text" placeholder="2" />
+              </div>
+            </div>
+
+            <div style="margin-top:12px">
+              <label for="notes">Notes (repairs, timeline, situation)</label>
+              <textarea id="notes" name="notes" placeholder="Briefly tell us the condition or any special situation"></textarea>
+            </div>
+
+            <div style="margin-top:16px;display:flex;gap:12px">
+              <button class="btn btn-gold" type="submit">Request Offer</button>
+              <button class="btn btn-ghost" type="button" onclick="mailtoContact()">Email Us Directly</button>
+            </div>
+            <div id="formMessage" style="margin-top:12px;color:var(--muted);font-size:13px"></div>
+          </form>
+        </div>
+      </section>
+
+      <!-- CONTACT -->
+      <section id="contact" class="page">
+        <div class="hero-card">
+          <h2>Contact</h2>
+          <p class="muted">Prefer to reach out directly? Email us at <strong><a href="mailto:opendoorwholesaling@gmail.com">opendoorwholesaling@gmail.com</a></strong> or use the form on the Sell page.</p>
+          <div style="margin-top:12px" class="grid-3">
+            <div class="card"><strong>Our Service Area</strong><p class="muted">Nationwide — we purchase properties across the United States.</p></div>
+            <div class="card"><strong>Hours</strong><p class="muted">Mon–Fri 9am–6pm ET — email anytime; we reply within 48 hours</p></div>
+            <div class="card"><strong>Phone</strong><p class="muted">We primarily use email for first contact. If you'd like a call-back, mention that in the form.</p></div>
+          </div>
+        </div>
+      </section>
+
+    </main>
+
+    <footer>
+      <div>© <span id="year"></span> Opendoor Wholesaling Co.</div>
+      <div class="muted">Built for sellers — <a href="mailto:opendoorwholesaling@gmail.com">opendoorwholesaling@gmail.com</a></div>
+    </footer>
+  </div>
+
+  <script>
+    // Basic hash routing for single-file multi-page
+    const pages = document.querySelectorAll('.page');
+    function showPage(hash){
+      const id = (hash || '#home').replace('#','');
+      pages.forEach(p=>{p.classList.remove('active')});
+      const el = document.getElementById(id);
+      if(el) el.classList.add('active');
+      // nav active link
+      document.querySelectorAll('nav a[data-link]').forEach(a=>{a.classList.remove('active-link')});
+      const activeNav = document.querySelector(`nav a[href="#${id}"]`);
+      if(activeNav) activeNav.classList.add('active-link');
+    }
+    window.addEventListener('hashchange',()=>showPage(location.hash));
+    showPage(location.hash||'#home');
+
+    // Small year fill
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    // Form handling - this demo collects data client-side and prepares a mailto fallback.
+    function handleSell(e){
+      e.preventDefault();
+      const data = {
+        name: document.getElementById('name').value.trim(),
+        email: document.getElementById('email').value.trim(),
+        phone: document.getElementById('phone').value.trim(),
+        address: document.getElementById('address').value.trim(),
+        beds: document.getElementById('beds').value.trim(),
+        baths: document.getElementById('baths').value.trim(),
+        notes: document.getElementById('notes').value.trim()
+      };
+
+      // Simple validation
+      if(!data.name||!data.email||!data.address){
+        document.getElementById('formMessage').textContent = 'Please include your name, email, and the property address.';
+        return;
+      }
+
+      // Prepare email body
+      const subject = encodeURIComponent('New offer request — ' + data.address);
+      const body = encodeURIComponent(
+        `Name: ${data.name}\nEmail: ${data.email}\nPhone: ${data.phone}\nAddress: ${data.address}\nBeds: ${data.beds}\nBaths: ${data.baths}\nNotes: ${data.notes}`
+      );
+
+      // Use mailto fallback so submissions can reach your email without server setup.
+      const mailto = `mailto:opendoorwholesaling@gmail.com?subject=${subject}&body=${body}`;
+      // Open user's email client
+      window.location.href = mailto;
+
+      // Update UI note
+      document.getElementById('formMessage').textContent = 'Opening your email client so you can send the request. If nothing happens, email opendoorwholesaling@gmail.com with the property details.';
+
+      // Update estimated offer widget with a playful placeholder calculation
+      const est = document.getElementById('estimate');
+      // Very rough estimate: base + beds * 10k - random
+      const base = 90000;
+      const b = parseInt(data.beds)||3;
+      const estimate = (base + b*10000 + (Math.floor(Math.random()*20000)-10000));
+      est.textContent = '$' + estimate.toLocaleString();
+    }
+
+    function mailtoContact(){
+      window.location.href = 'mailto:opendoorwholesaling@gmail.com?subject=' + encodeURIComponent('Question about selling my home') + '&body=' + encodeURIComponent('Hi Opendoor Wholesaling Co.,\n\nI would like to...');
+    }
+
+    function navigateTo(hash){
+      location.hash = hash;
+    }
+  </script>
+</body>
+</html>
